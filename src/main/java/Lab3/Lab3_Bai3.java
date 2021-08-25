@@ -1,3 +1,9 @@
+
+/*  Bai 3:
+Tao file read_from_file.java, viet phuong thuc main, su dung FileReader de doc noi dung file ‘nhanvien.txt’
+va in nhung gi da doc duoc tu file ra man hinh.
+ */
+
 package Lab3;
 
 import java.io.FileInputStream;

@@ -1,3 +1,9 @@
+
+/*  Bai 2: 2 diem
+Tao file write_to_file.java, viet phuong thuc main cho phep nhap cac thong tin cho 3 nhan vien tu ban phim,
+su dung FileWriter de ghi cac thong tin vua nhap vao file text ‘nhanvien.txt’. Mo file ‘nhanvien.txt’ de xem da ghi duoc thong tin vao file hay chua.
+ */
+
 package Lab3;
 
 import java.io.FileOutputStream;

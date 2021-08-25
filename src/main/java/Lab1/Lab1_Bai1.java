@@ -1,3 +1,8 @@
+/*  Bai 1:
+Tao file java va dat ten la Exercise1.java viet chuong trinh cho phep nguoi dung nhap vao ban kinh cua mot hinh tron
+    sau do tinh dien tich va chu vi cua hinh tron do va in ket qua ra man hinh. Chuong trinh phai dung hang so PI da co san
+    cua class Math trong package java.lang.
+*/
 package Lab1;
 
 import java.util.Scanner;

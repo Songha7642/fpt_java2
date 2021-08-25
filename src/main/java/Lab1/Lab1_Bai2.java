@@ -1,3 +1,8 @@
+
+/*  Bai 2
+Tao file java va dat ten la Exercise2.java viet chuong trinh cho phep nguoi dung nhap vao cac he so a,b,c
+  cua mot phuong trinh bac 2. Tinh toan nghiem cua phuong trinh va in ket qua ra man hinh.
+ */
 package Lab1;
 
 import java.util.Scanner;

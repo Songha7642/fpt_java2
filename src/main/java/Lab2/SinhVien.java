@@ -1,3 +1,12 @@
+
+/*  Bai 3:
+Tao file sinhvien.java mo ta 1 sinh vien co cac thuoc tinh masv, hoten, diem, xeploai. Viet cac setter, getter,
+constructor, toString. Nhap du lieu cho mot sinh vien tu ban phim va in sinh vien vua nhap ra man hinh.
+
+ Bai 4:
+Viet doan code xu ly viec nhap du lieu hop le cho bai 3. Neu nhap sai kieu du lieu thi thong bao loi va yeu cau nhap lai.
+ */
+
 package Lab2;
 
 import java.util.InputMismatchException;

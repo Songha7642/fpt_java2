@@ -1,3 +1,13 @@
+
+/*  Bai 4:
+Tao file write_object.java, tao mang 3 nhanvien, nhap thong tin cac nhan vien, su dung
+ObjectOutputStream de ghi mang nhan vien nay vao file ‘nhanvien.bin’.
+
+Bai 5:
+Tao file read_object.java, tao mang 3 nhanvien, su dung ObjectInputStream de doc du lieu tu file ‘nhanvien.bin’ va in mang nhan vien ra man hinh.
+
+ */
+
 package Lab3.Bai4_Bai5;
 
 import java.io.Serializable;

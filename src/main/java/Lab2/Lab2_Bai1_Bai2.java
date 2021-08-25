@@ -1,3 +1,15 @@
+
+/*  Bai 1:
+Tao project co ten la lab02_tendangnhap va thuc hien cac cong viec sau day:
+Tao file vdmang.java va viet chuong trinh nhap vao mot mang so nguyen co 5 phan tu,
+  tinh tong cac so nguyen do va in ket qua ra man hinh.
+
+
+ Bai 2:
+Lam tiep tren file vdmang.java va nhap phan tu thu 6. Vi mang chi co 5 phan tu nen khi nhap phan tu thu 6 thi se xuat hien ngoai le.
+Viet doan code xu ly ngoai le nay.
+ */
+
 package Lab2;
 
 import java.util.Scanner;

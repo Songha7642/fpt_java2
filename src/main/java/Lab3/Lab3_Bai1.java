@@ -1,6 +1,17 @@
-package Lab3;
 
-import Lab2.SinhVien;
+/*  Bai 1:
+
+Tao file nhanvien.java va thuc hien cac cong viec:
+Tao class nhanvien co cac thuoc tinh: manv	String
+hoten	String tuoi	int luong	float
+
+Viet cac setter, getter, constructor, toString
+
+Viet phuong thuc main de nhap vao cac thong tin cho 1 nhan vien tu ban phim va in cac thong tin cua nhan vien nay ra man hinh.
+
+ */
+
+package Lab3;
 
 import java.util.Scanner;
 
