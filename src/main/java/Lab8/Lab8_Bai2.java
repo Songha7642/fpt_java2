@@ -1,84 +1,111 @@
-package Lab8;
 
+/* Bai 2
+	 Tao file Execise2.java va thiet ke Frame theo mau sau day: (hinh)
+ */
+
+package Lab8;
 
 import javax.swing.*;
 
-import java.awt.*;
-
 public class Lab8_Bai2 {
     JFrame frm;
-    JLabel headerLabel;
-    JPanel controlPanel, radioPanel;
-
-
+    JPanel controlPanel;
        Lab8_Bai2() {
 
            frm = new JFrame("map");
-           frm.setSize(500, 350);
+           frm.setSize(500, 290);
 
            controlPanel = new JPanel();
            controlPanel.setLayout(null);
 
+           JLabel headerLabel = new JLabel("Register information");
+           headerLabel.setLocation(15,-30);
+           headerLabel.setSize(200,100);
 
-           headerLabel = new JLabel("Register information");
            JLabel nameLabel = new JLabel("Name");
-           JLabel dateLabel = new JLabel("Date of Birth");
+           nameLabel.setLocation(60,-5);
+           nameLabel.setSize(100,90);
+
+           JLabel dateLabel = new JLabel("Date of birth");
+           dateLabel.setLocation(60,20);
+           dateLabel.setSize(100,90);
+
            JLabel emailLabel = new JLabel("Email");
+           emailLabel.setLocation(60,45);
+           emailLabel.setSize(100,90);
+
            JLabel sexLabel = new JLabel("Sex");
+           sexLabel.setLocation(60,70);
+           sexLabel.setSize(100,90);
+
            JLabel proLabel = new JLabel("Province");
-           JLabel operLabel = new JLabel("Operations");
+           proLabel.setLocation(60,95);
+           proLabel.setSize(120,100);
 
-           headerLabel.setFont(new Font("Time New Roman", 1, 13));
-           headerLabel.setSize(200,50);
-           headerLabel.setLocation(5,0);
+           JLabel operLabel = new JLabel("Operation");
+           operLabel.setLocation(15,137);
+           operLabel.setSize(100,90);
+
+           // Make TextField
+
+           JTextField nameText = new JTextField(25);
+           nameText.setLocation(180,32);
+           nameText.setSize(250,20);
+
+           JTextField dateText = new JTextField(25);
+           dateText.setLocation(180,57);
+           dateText.setSize(250,20);
+
+           JTextField emailText = new JTextField(25);
+           emailText.setLocation(180,82);
+           emailText.setSize(250,20);
+
+          // Make Radio
+
+           JRadioButton maleLabel = new JRadioButton("Male");
+           maleLabel.setLocation(180,102);
+           maleLabel.setSize(70,30);
+           JRadioButton femaleLabel = new JRadioButton("Female");
+           femaleLabel.setLocation(310,102);
+           femaleLabel.setSize(70,30);
+
+           // Make ComboBox
+
+           String[] province = {"Ha Noi", "TP.Ho Chi Minh", "Ca Mau", "Can Tho", "Dong Thap",
+                   "Kien Giang", "Vung Tau", "Bac Giang", "Thanh Hoa", "Ha Nam", "Ha Tinh", "Bac Ninh", "Hue",
+                   "Da Nang", "Binh ?inh"};
+           JComboBox choice = new JComboBox(province);
+           choice.setLocation(307,134);
+           choice.setSize(117,22);
+
+           // Make Button
+
+           JButton btn1 = new JButton("Register");
+           btn1.setLocation(105,200);
+           btn1.setSize(120,22);
+
+           JButton btn2 = new JButton("Reset");
+           btn2.setLocation(230,200);
+           btn2.setSize(88,22);
+
+
            controlPanel.add(headerLabel);
-
-           nameLabel.setFont(new Font("Time New Roman", 1, 13));
-           nameLabel.setSize(100,50);
-           nameLabel.setLocation(40,30);
-           final JTextField nameText = new JTextField(20);
-
-           dateLabel.setFont(new Font("Time New Roman", 1, 13));
-           dateLabel.setSize(100,50);
-           dateLabel.setLocation(40,60);
-           emailLabel.setFont(new Font("Time New Roman", 1, 13));
-           emailLabel.setSize(100,50);
-           emailLabel.setLocation(40,90);
-           sexLabel.setFont(new Font("Time New Roman", 1, 13));
-           sexLabel.setSize(100,50);
-           sexLabel.setLocation(40,120);
-           proLabel.setFont(new Font("Time New Roman", 1, 13));
-           proLabel.setSize(100,50);
-           proLabel.setLocation(40,150);
-           operLabel.setFont(new Font("Time New Roman", 1, 13));
-           operLabel.setSize(100,50);
-           operLabel.setLocation(5,205);
-
            controlPanel.add(nameLabel);
-           controlPanel.add(nameText);
            controlPanel.add(dateLabel);
            controlPanel.add(emailLabel);
            controlPanel.add(sexLabel);
            controlPanel.add(proLabel);
            controlPanel.add(operLabel);
-
-
-           JRadioButton maleButton = new JRadioButton("Male");
-           JRadioButton femaleButton = new JRadioButton("Female");
-
-
-           ButtonGroup bgroup = new ButtonGroup();
-           bgroup.add(maleButton);
-           bgroup.add(femaleButton);
-
-           radioPanel = new JPanel();
-           radioPanel.setLayout(new GridLayout(1,2));
-           radioPanel.add(maleButton);
-           radioPanel.add(femaleButton);
-
+           controlPanel.add(nameText);
+           controlPanel.add(dateText);
+           controlPanel.add(emailText);
+           controlPanel.add(maleLabel);
+           controlPanel.add(femaleLabel);
+           controlPanel.add(choice);
+           controlPanel.add(btn1);
+           controlPanel.add(btn2);
 
            frm.add(controlPanel);
-
 
            frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
            frm.setLocationRelativeTo(null);

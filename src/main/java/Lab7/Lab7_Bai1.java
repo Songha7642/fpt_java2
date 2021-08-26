@@ -1,6 +1,6 @@
 package Lab7;
 
-import org.w3c.dom.ls.LSOutput;
+// Applet
 
 import java.applet.Applet;
 import java.awt.*;

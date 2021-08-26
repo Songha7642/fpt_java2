@@ -1,5 +1,9 @@
-package Lab8;
 
+/* Bai 1:
+ Tao file java va dat ten la Exercise1.java va viet them ma de hoan thanh viec dem so lan kich chuot.
+ */
+
+package Lab8;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
